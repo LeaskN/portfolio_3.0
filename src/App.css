@@ -1,3 +1,7 @@
+*{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 :root{
   --nl-dark-black: #141414;
   --nl-grey: #333333;
@@ -21,6 +25,8 @@ body{
   background-color: var(--nl-white);
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  overflow-x: none;
 }
 
 body::-webkit-scrollbar {
@@ -39,7 +45,7 @@ body::-webkit-scrollbar-thumb{
 main{
   margin-left: 5rem;
   padding: 1rem;
-  font-size: 10em;
+  font-size: 1em;
 }
 
 .navbar{
