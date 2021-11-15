@@ -64,6 +64,7 @@ main{
   align-items: center;
   display: flex;
   align-items: flex-start;
+  min-height: 500px;
 }
 
 .nav-item:last-child{
@@ -73,13 +74,15 @@ main{
 .nav-link{
   display: flex;
   align-items: center;
-  height: 5rem;
   color: var(--nl-white);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);  
   width: 100%;
+  justify-content: center;
+  height: 5rem;
 }
+
 
 .nav-link:hover{
   filter: grayscale(0%) opacity(1);
@@ -155,10 +158,6 @@ main{
     flex-direction: row;
   }
 
-  .nav-link{
-    justify-content: center;
-  }
-
   main{
     margin: 0;
     padding-bottom: 5rem;
@@ -183,10 +182,6 @@ main{
   .navbar:hover .link-text{
     display: inline;
     transition: opacity var(--transition-speed);
-  }
-
-  .nav-link{
-    justify-content: center;
   }
 
   main{
