@@ -64,7 +64,6 @@ main{
   align-items: center;
   display: flex;
   align-items: flex-start;
-  min-height: 500px;
 }
 
 .nav-item:last-child{
@@ -105,10 +104,12 @@ main{
 }
 
 .fa-primary{
-  color: var(--nl-light-blue)
+  color: var(--nl-white);
+  fill: var(--nl-white);
 }
 .fa-secondary{
-  color: var(--nl-dark-blue)
+  color: var(--nl-light-blue);
+  fill: var(--nl-light-blue);
 }
 
 .fa-primary, .a-secondary{
@@ -156,8 +157,11 @@ main{
 
   .navbar-nav{
     flex-direction: row;
+    font-size: 0;
   }
-
+  .nav-item:hover{
+    font-size: 1rem;
+  }
   main{
     margin: 0;
     padding-bottom: 5rem;
@@ -173,6 +177,7 @@ main{
 
   .navbar-nav{
     height: 100vh;
+    min-height: 500px;
   }
 
   .navbar:hover{
