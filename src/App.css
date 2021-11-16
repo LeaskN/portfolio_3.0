@@ -108,8 +108,8 @@ main{
   fill: var(--nl-white);
 }
 .fa-secondary{
-  color: var(--nl-light-blue);
-  fill: var(--nl-light-blue);
+  color: var(--nl-dark-blue);
+  fill: var(--nl-dark-blue);
 }
 
 .fa-primary, .a-secondary{
@@ -158,6 +158,8 @@ main{
   .navbar-nav{
     flex-direction: row;
     font-size: 0;
+    width: 100%;
+    justify-content: space-evenly;
   }
   .nav-item:hover{
     font-size: 1rem;
