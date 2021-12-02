@@ -1,0 +1,19 @@
+.home{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  color: var(--nl-white);
+}
+
+.intro {
+  animation: 1s intro .3s forwards;
+    transform:translateX(100vw);
+}
+
+@keyframes intro {
+  to {
+    transform:translateX(0);
+  }
+}

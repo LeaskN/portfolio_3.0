@@ -1,12 +1,14 @@
 import './App.css';
 import React from 'react';
 import NavBar from './Components/NavBar';
+import Home from './Components/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <main>
+        <Home />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et. Amet nulla facilisi morbi tempus iaculis urna id. Adipiscing vitae proin sagittis nisl rhoncus. Amet est placerat in egestas erat imperdiet sed. Nisl pretium fusce id velit ut. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Tellus orci ac auctor augue mauris augue neque gravida. Et magnis dis parturient montes nascetur ridiculus. Tortor condimentum lacinia quis vel. In cursus turpis massa tincidunt. Ac turpis egestas sed tempus urna. Risus commodo viverra maecenas accumsan lacus. Consequat id porta nibh venenatis cras sed. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Diam maecenas sed enim ut sem viverra aliquet. Faucibus in ornare quam viverra orci. Quis eleifend quam adipiscing vitae proin sagittis. At in tellus integer feugiat scelerisque varius morbi.
 
         At risus viverra adipiscing at. Eu nisl nunc mi ipsum faucibus vitae aliquet. Augue ut lectus arcu bibendum. Pulvinar neque laoreet suspendisse interdum consectetur libero. Varius morbi enim nunc faucibus. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Nunc scelerisque viverra mauris in aliquam sem. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Adipiscing bibendum est ultricies integer. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Nulla malesuada pellentesque elit eget gravida cum. Et tortor consequat id porta nibh venenatis cras sed. Nibh praesent tristique magna sit amet purus gravida quis blandit. Semper viverra nam libero justo laoreet sit amet. Risus pretium quam vulputate dignissim suspendisse. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.
