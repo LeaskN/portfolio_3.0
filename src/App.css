@@ -21,8 +21,8 @@
 }
 
 body{
-  color: var(--nl-dark-black);
-  background-color: var(--nl-white);
+  color: var(--nl-white);
+  background-color: var(--nl-dark-black);
   margin: 0;
   padding: 0;
   max-width: 100vw;
@@ -194,4 +194,12 @@ main{
     margin: 0px;
     padding-left: 5rem;
   }
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
