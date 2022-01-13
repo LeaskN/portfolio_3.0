@@ -1,6 +1,7 @@
 *{
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 :root{
   --nl-dark-black: #141414;

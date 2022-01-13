@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function About(){
-  return <div className='page' id='about' >About</div>
+export default function About(props){
+  return(
+    <>
+      <div className='page' id='about' ref={props.refProp}>About</div>
+    </>
+  ) 
 }
