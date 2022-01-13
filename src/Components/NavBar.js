@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function(){
+export default function NavBar (){
   return(
     <nav className="navbar">
       <ul className="navbar-nav">
 
         <li className="logo">
-          <a href="#" className="nav-link">
+          <a href="/" className="nav-link">
             <span className="link-text logo-text top-logo">Nic<br/>Leask</span>
             <svg
               aria-hidden="true"
@@ -35,7 +35,7 @@ export default function(){
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/home" className="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
               <path className="fa-primary" d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" opacity=".3"/>
               <path className="fa-secondary" d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z"/>
@@ -45,7 +45,7 @@ export default function(){
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/about" className="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
               <path className="fa-primary" d="M20,11c0-4.4-3.6-8-8-8s-8,3.6-8,8s3.6,8,8,8c0.3,0,0.7,0,1-0.1v2.3c2.1-1.4,6-4.4,6.8-8.6C19.9,12.1,20,11.6,20,11z" opacity=".3"/>
               <path className="fa-secondary" d="M12,23.1V20c-5,0-9-4-9-9c0-5,4-9,9-9c5,0,9,4,9,9c0,0.6-0.1,1.3-0.2,1.9c-0.9,4.5-4.9,7.7-7.3,9.2L12,23.1z M14,17.8v1.5 c2-1.5,4.2-3.9,4.8-6.8c0.1-0.5,0.2-1,0.2-1.5c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7s3.1,7,7,7c0.3,0,0.6,0,0.9-0.1L14,17.8z"/></svg>
@@ -54,7 +54,7 @@ export default function(){
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/projects" className="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
               <path className='fa-primary' d="M20,19H4c-0.6,0-1-0.4-1-1V6c0-0.6,0.4-1,1-1h16c0.6,0,1,0.4,1,1v12C21,18.6,20.6,19,20,19z" opacity=".3"/>
               <path className='fa-secondary' d="M9 3H15V5H9z"/>
@@ -66,7 +66,7 @@ export default function(){
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href='https://docs.google.com/document/d/11M31uiHtvJJSiv6i_Ij-BnZ0S6ZOQbmwcGLaFHjwo1g/edit?usp=sharing' target='_blank' without rel="noreferrer" className="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
               <path className="fa-primary" d="M19,20c0,0.6-0.4,1-1,1H6c-0.6,0-1-0.4-1-1V4c0-0.6,0.4-1,1-1h7.6L19,8.4V20z" opacity=".3"/>
               <path className="fa-primary" d="M8 12H16V14H8zM8 16H16V18H8z"/>
@@ -77,7 +77,7 @@ export default function(){
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="/contact" className="nav-link">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
               <path className="fa-primary" d="M7,5C4.8,5,3,6.8,3,9v9c0,0.6,0.4,1,1,1h16c0.6,0,1-0.4,1-1V9c0-2.2-1.8-4-4-4H7z" opacity=".3"/>
               <path className="fa-secondary" d="M20,20H4c-1.1,0-2-0.9-2-2V9c0-2.8,2.2-5,5-5h10c2.8,0,5,2.2,5,5v9C22,19.1,21.1,20,20,20z M7,6C5.3,6,4,7.3,4,9v9h16V9 c0-1.7-1.3-3-3-3H7z"/>
