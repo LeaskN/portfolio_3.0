@@ -1,0 +1,13 @@
+.scroller{
+  position: fixed;
+  bottom: 50px;
+  left: 50vw;
+  margin-left: -16px;
+  cursor: pointer;
+}
+
+@media (max-width:600px){
+  .scroller{
+    display: none;
+  }
+}

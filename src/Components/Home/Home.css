@@ -3,13 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: var(--bg-primary);
   color: var(--nl-white);
 }
 
 .intro {
   animation: 1s intro .3s forwards;
-    transform:translateX(100vw);
+  transform: translateX(100vw);
+  font-size: 140px;
+  text-shadow: 0 15px 25px rgba(0,0,0,0.5)
 }
 
 @keyframes intro {
