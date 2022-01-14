@@ -13,10 +13,10 @@
 }
 
 .flipped{
-  transition-duration: 0.8s;
-  -webkit-animation:flip 1s linear forwards;
-  -moz-animation:flip 1s linear forwards;
-  animation:flip 1s linear forwards;
+  transition-duration: 0.3s;
+  -webkit-animation:flip .3s linear forwards;
+  -moz-animation:flip .3s linear forwards;
+  animation:flip .3s linear forwards;
 }
 
 @-moz-keyframes flip { 
@@ -33,14 +33,14 @@
 }
 
 .unflipped{
-  transition-duration: 0.8s;
+  transition-duration: 0.3s;
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform:rotate(180deg);
-  -webkit-animation:unflip 1s linear forwards;
-  -moz-animation:unflip 1s linear forwards;
-  animation:unflip 1s linear forwards;
+  -webkit-animation:unflip .3s linear forwards;
+  -moz-animation:unflip .3s linear forwards;
+  animation:unflip .3s linear forwards;
 }
 
 @-moz-keyframes unflip { 
