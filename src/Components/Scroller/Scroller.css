@@ -1,6 +1,6 @@
 .scroller{
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   left: 50vw;
   margin-left: -16px;
   cursor: pointer;
@@ -10,4 +10,14 @@
   .scroller{
     display: none;
   }
+}
+
+.flipped{
+  animation: flip forwards;
+  animation-duration: 3s;
+}
+
+@keyframes flip {
+  0% {rotate: (0deg);}
+  100% {top: (180deg);}
 }

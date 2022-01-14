@@ -12,7 +12,12 @@
   animation: 1s intro .3s forwards;
   transform: translateX(100vw);
   font-size: 140px;
-  text-shadow: 0 15px 25px rgba(0,0,0,0.5)
+  text-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.colored{
+  color: var(--nl-light-blue)
 }
 
 @keyframes intro {

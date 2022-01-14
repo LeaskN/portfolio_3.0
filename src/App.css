@@ -10,7 +10,7 @@
   --nl-red: #D00A1B;
   --nl-white: #F5F5F5;
   --nl-white-2: #b6b6b6;
-  --nl-light-blue: #1DBBDE;
+  --nl-light-blue: #0099ff;
 
   --bg-primary: var(--nl-dark-black);
   --bg-seconday: var(--nl-grey);
@@ -108,8 +108,8 @@ main{
   fill: var(--nl-white);
 }
 .fa-secondary{
-  color: var(--nl-dark-blue);
-  fill: var(--nl-dark-blue);
+  color: var(--nl-light-blue);
+  fill: var(--nl-light-blue);
 }
 
 .fa-primary, .a-secondary{
