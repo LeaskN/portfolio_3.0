@@ -41,6 +41,8 @@ function App() {
   }
   
   useEffect(() => {
+    getComponentsSizes();
+
     window.addEventListener("resize", getComponentsSizes);
 
     window.addEventListener('scroll', handleScroll, {
@@ -53,7 +55,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App" onScroll={handleScroll} onClick={getComponentsSizes}>
+    <div className="App" onScroll={handleScroll} onClick={getComponentsSizes} >
       <NavBar scrollTo={{scrollToHome, scrollToAbout, scrollToPort, scrollToContact}}/>
       <main ref={mainRef}>
         <Home refProp={homeRef} />
