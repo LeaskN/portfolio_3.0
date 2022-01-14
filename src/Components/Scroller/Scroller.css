@@ -13,11 +13,45 @@
 }
 
 .flipped{
-  animation: flip forwards;
-  animation-duration: 3s;
+  transition-duration: 0.8s;
+  -webkit-animation:flip 1s linear forwards;
+  -moz-animation:flip 1s linear forwards;
+  animation:flip 1s linear forwards;
 }
 
-@keyframes flip {
-  0% {rotate: (0deg);}
-  100% {top: (180deg);}
+@-moz-keyframes flip { 
+  100% { -moz-transform: rotate(180deg); } 
+}
+@-webkit-keyframes flip { 
+  100% { -webkit-transform: rotate(180deg); } 
+}
+@keyframes flip { 
+  100% { 
+      -webkit-transform: rotate(180deg); 
+      transform:rotate(180deg); 
+  } 
+}
+
+.unflipped{
+  transition-duration: 0.8s;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform:rotate(180deg);
+  -webkit-animation:unflip 1s linear forwards;
+  -moz-animation:unflip 1s linear forwards;
+  animation:unflip 1s linear forwards;
+}
+
+@-moz-keyframes unflip { 
+  100% { -moz-transform: rotate(0deg); } 
+}
+@-webkit-keyframes unflip { 
+  100% { -webkit-transform: rotate(0deg); } 
+}
+@keyframes unflip { 
+  100% { 
+      -webkit-transform: rotate(0deg); 
+      transform:rotate(0deg); 
+  } 
 }

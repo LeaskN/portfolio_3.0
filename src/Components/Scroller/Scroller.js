@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Scroller.css';
-import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
+import { AiOutlineDown } from 'react-icons/ai';
 
 export default function Scroller(props){
   const scroll = (e) => {
@@ -17,18 +17,9 @@ export default function Scroller(props){
   }
 
   
-
-  if(props.bottom){
-    return(
-      <div className='scroller' onClick={(e) => scroll(e)} >
-        { <AiOutlineDown className='flipped' /> }
-      </div>
-    )
-  } else {
-    return(
-      <div className='scroller' onClick={(e) => scroll(e)} >
-        {<AiOutlineDown />}
-      </div>
-    )
-  }
+  return( 
+    <div className='scroller' onClick={(e) => scroll(e)} >
+      { <AiOutlineDown className={ props.bottom ? 'flipped' : 'unflipped' }/> }
+    </div>
+  )
 }
