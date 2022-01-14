@@ -11,7 +11,7 @@ import Scroller from './Components/Scroller/Scroller';
 
 function App() {
   const [bottom, setBottom] = useState(false);
-  const [height, setHeight] = useState();
+  const [scrollOptions, setScrollOptions] = useState();
 
   const mainRef = useRef();
   const portfolioRef = useRef(null);
@@ -25,18 +25,11 @@ function App() {
   const scrollToContact = (e) =>{e.preventDefault(); contactRef.current.scrollIntoView();} 
 
   const getComponentsSizes = () => {
-    const newHeight = mainRef.current.clientHeight;
-    console.log(mainRef.current.childNodes)
-    console.log(mainRef.current.childNodes[0].clientHeight)
-    console.log(mainRef.current.childNodes[1].clientHeight)
-    console.log(mainRef.current.childNodes[2].clientHeight)
-    console.log(mainRef.current.childNodes[3].clientHeight)
-
-    setHeight(newHeight);
+    let tempArr = [...mainRef?.current?.childNodes].map(ele => ele.clientHeight)
+    setScrollOptions(tempArr);
   };
 
   const handleScroll = () => {
-
     const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight
 
     if (bottom) {
@@ -70,7 +63,7 @@ function App() {
         {/* <PriorExperience refProp={portfolioRef}/> */}
         {/* <div ref={portfolioRef}>Element to scroll to</div>  */}
       </main>
-      <Scroller scrollTo={{scrollToHome, scrollToAbout, scrollToPort, scrollToContact}} bottom={bottom}/>
+      <Scroller scrollTo={{scrollToHome, scrollToAbout, scrollToPort, scrollToContact}} bottom={bottom} scrollOptions={scrollOptions}/>
     </div>
   );
 }
