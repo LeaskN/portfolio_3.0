@@ -6,7 +6,7 @@ export default function NavBar (props){
       <ul className="navbar-nav">
         <li className="logo">
           <a href="/" className="nav-link" onClick={props.scrollTo.scrollToHome}>
-            <span className="link-text logo-text top-logo"><span className='letterIcon'>N</span>ic<br/>Leask</span>
+            <span className="link-text top-logo"><span className='letterIcon'>N</span>ic<br/>Leask</span>
             <svg
               aria-hidden="true"
               focusable="false"
