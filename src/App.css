@@ -205,3 +205,9 @@ main{
   justify-content: center;
   width: 100%;
 }
+
+.letterIcon{
+  color: var(--nl-light-blue);
+  font-weight: bold;
+  text-shadow: -.02em .02em 0em var(--nl-red);
+}
