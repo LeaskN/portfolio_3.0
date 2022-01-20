@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function Home(props){
   const [letters, setLetters] = useState({
-    letters: ['+','*','/','|','}','{','[',']','~','"',':',';','?'], 
+    letters: [], 
     count:0,
     count2:0,
     symbols: '+*/|}{[]~":;?/.><=+-_)(*&^%$#@!)}'
