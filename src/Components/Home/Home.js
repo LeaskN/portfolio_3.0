@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function Home(props){
   const [letters, setLetters] = useState({
-    letters: [], 
+    letters: ['+','*','=','-','_','&','%','$','#','@','!','}','{','#'], 
     count:0,
     count2:0,
     symbols: '+*/|}{[]~":;?/.><=+-_)(*&^%$#@!)}'
@@ -16,16 +16,16 @@ export default function Home(props){
         if(prevLetters.letters.join('') === name) window.clearInterval(timer);
         return animate({...prevLetters}, name)
       });
-    }, 10);
+    }, 75);
     return () => {
       window.clearInterval(timer);
     };
   }, [])
 
   function animate(prevLetters, name){
-    if(prevLetters.count2 < 10){
+    if(prevLetters.count2 < 3){
       prevLetters.letters[prevLetters.count] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
-      for(let i = prevLetters.count; i < prevLetters.letters.length; i++){
+      for(let i = prevLetters.count; i < prevLetters.letters.length-10; i++){
         //slow this down!
         prevLetters.letters[i] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)]
       }
