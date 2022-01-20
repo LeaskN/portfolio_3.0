@@ -2,52 +2,57 @@ import React, {useEffect, useState} from 'react';
 import './Home.css';
 
 export default function Home(props){
+  const name = 'Nicholas Leask'
   const [letters, setLetters] = useState({
-    letters: [], 
+    letters: ['+','*','=','-','_','&','%','$','#','@','!','}','{','#'], 
     count:0,
     count2:0,
-    symbols: '+*/|}{[]~":;?/.><=+-_)(*&^%$#@!)}'
+    symbols: ':*;/|}{[]":;?/.+-)(*^!)}'
   }) ;
 
   useEffect(() => {
-    const name = 'Nicholas Leask'
     const timer = window.setInterval(() => {
       setLetters(prevLetters => {
         if(prevLetters.letters.join('') === name) window.clearInterval(timer);
-        return animate({...prevLetters}, name)
+        return animate({...prevLetters}, name);
       });
-    }, 10);
+    }, 95);
     return () => {
       window.clearInterval(timer);
     };
   }, [])
 
   function animate(prevLetters, name){
-    if(prevLetters.count2 < 10){
+    if(prevLetters.count2 < 2){
       prevLetters.letters[prevLetters.count] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
-      for(let i = prevLetters.count; i < prevLetters.letters.length; i++){
-        //slow this down!
-        prevLetters.letters[i] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)]
+      for(let i = prevLetters.count; i < prevLetters.letters.length-1; i++){
+        for(let j = i; j < prevLetters.letters.length; j++){
+          prevLetters.letters[j] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
+        }
+        prevLetters.letters[i] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
       }
       prevLetters.count2++;
-      return prevLetters
+      return prevLetters;
     }
-    prevLetters.count2 = 0
+    prevLetters.count2 = 0;
     prevLetters.letters[prevLetters.count] = name[prevLetters.count];
-    prevLetters.count++
+    prevLetters.count++;
+    // console.log(prevLetters.letters);
     return prevLetters;
   }
 
   const mapLetters = (arr) => {
-    arr.join('').split(' ').splice(1, ' ')
-    console.log(arr)
-    return arr.map(l => l);
+    if(arr.reduce((l,a) => l+=a).toLowerCase() === name.toLowerCase()){
+      console.log('test')
+      return name;
+    }
+    return arr.reduce((l,a) => l+=a);
   }
 
   return(
     <div className="home" ref={props.refProp}>
       <h1 className="intro">Hi, I'm
-        <span className='colored'><span className='letterIcon nameContainer'>{mapLetters(letters.letters)}</span></span>
+        <span className='colored'><div className='letterIcon nameContainer'>{letters.letters.join('').toLowerCase().includes(name.toLowerCase()) ? name : mapLetters(letters.letters)}</div></span>
       </h1>
       <h3>I'm a <span className='colored'>software engineer</span></h3>
     </div>
