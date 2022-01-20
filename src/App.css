@@ -30,23 +30,9 @@ body{
   overflow-x: none;
 }
 
-/* body::-webkit-scrollbar {
-  width: 1.5rem;
-}
-body:hover::-webkit-scrollbar {
-  width: .5rem;
-  color: red;
-}
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-body::-webkit-scrollbar-thumb{
-  background: var(--nl-dark-blue);
-} */
-
 main{
-  margin-left: 5rem;
   font-size: 1em;
+  padding-left: 10px;
 }
 
 .navbar{
@@ -107,6 +93,7 @@ main{
   color: var(--nl-white);
   fill: var(--nl-white);
 }
+
 .fa-secondary{
   color: var(--nl-light-blue);
   fill: var(--nl-light-blue);
@@ -141,6 +128,7 @@ main{
 .top-logo{
   width: 100%;
   justify-content: center;
+  color: var(--nl-light-blue);
 }
 /* small screens */
 @media only screen and (max-width:600px){
@@ -165,7 +153,7 @@ main{
     font-size: 1rem;
   }
   main{
-    margin: 0;
+    margin: 0 40px;
     padding-bottom: 5rem;
   }
 }
@@ -192,9 +180,8 @@ main{
   }
 
   main{
-    margin: 0px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 }
 
@@ -204,4 +191,10 @@ main{
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.letterIcon{
+  color: var(--nl-light-blue);
+  font-weight: bold;
+  text-shadow: -.02em .02em 0em var(--nl-red);
 }
