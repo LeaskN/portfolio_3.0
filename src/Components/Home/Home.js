@@ -26,6 +26,7 @@ export default function Home(props){
     if(prevLetters.count2 < 10){
       prevLetters.letters[prevLetters.count] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
       for(let i = prevLetters.count; i < prevLetters.letters.length; i++){
+        //slow this down!
         prevLetters.letters[i] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)]
       }
       prevLetters.count2++;
