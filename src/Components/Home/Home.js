@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import animate from '../../HelperFunctions/AnimatedLetters';
 import './Home.css';
 
 export default function Home(props){
@@ -21,22 +22,6 @@ export default function Home(props){
       window.clearInterval(timer);
     };
   }, [])
-
-  function animate(prevLetters, name){
-    if(prevLetters.count2 < 10){
-      prevLetters.letters[prevLetters.count] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)];
-      for(let i = prevLetters.count; i < prevLetters.letters.length; i++){
-        //slow this down!
-        prevLetters.letters[i] = prevLetters.symbols[Math.floor(Math.random() * prevLetters.symbols.length)]
-      }
-      prevLetters.count2++;
-      return prevLetters
-    }
-    prevLetters.count2 = 0
-    prevLetters.letters[prevLetters.count] = name[prevLetters.count];
-    prevLetters.count++
-    return prevLetters;
-  }
 
   const mapLetters = (arr) => {
     arr.join('').split(' ').splice(1, ' ')
