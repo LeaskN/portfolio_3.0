@@ -10,6 +10,7 @@ import Scroller from './Components/Scroller/Scroller';
 
 
 function App() {
+  console.log('updating app', new Date().getSeconds())
   const [bottom, setBottom] = useState(false);
   const [scrollOptions, setScrollOptions] = useState();
 
@@ -34,7 +35,6 @@ function App() {
 
     if (bottom) {
       setBottom(true)
-      console.log('at the bottom');
     } else {
       setBottom(false)
     }

@@ -8,7 +8,7 @@ export default function Home(props){
     count:0,
     count2:0,
     symbols: '+*/|}{[]~":;?/.><=+-_)(*&^%$#@!)}'
-  }) ;
+  });
 
   useEffect(() => {
     const name = 'Nicholas Leask'
@@ -25,14 +25,13 @@ export default function Home(props){
 
   const mapLetters = (arr) => {
     arr.join('').split(' ').splice(1, ' ')
-    console.log(arr)
     return arr.map(l => l);
   }
 
   return(
     <div className="home" ref={props.refProp}>
       <h1 className="intro">Hi, I'm
-        <span className='colored'><span className='letterIcon nameContainer'>{mapLetters(letters.letters)}</span></span>
+        {/* <span className='colored'><span className='letterIcon nameContainer'>{mapLetters(letters.letters)}</span></span> */}
       </h1>
       <h3>I'm a <span className='colored'>software engineer</span></h3>
     </div>
